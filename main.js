@@ -42,4 +42,6 @@
     ". He is " + this.pet.color + " and he is a " + this.pet.species;
   };
 
+  var joe = new PetOwner("Joe", 28, "Dev", "Monkey", "Black", "Jojo");
+
 }).call(this);
