@@ -18,4 +18,10 @@
     }
   };
 
+  var Pet = function (name, species, color) {
+    this.name = name;
+    this.species = species;
+    this.color = color;
+  };
+
 }).call(this);
