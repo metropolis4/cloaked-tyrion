@@ -30,4 +30,6 @@
     this.job = job;
   };
 
+  var PetOwner = new User();
+
 }).call(this);
