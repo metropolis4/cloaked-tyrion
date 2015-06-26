@@ -39,7 +39,7 @@
 
   PetOwner.prototype.tellAboutPet = function () {
     return "My pet's name is " + this.pet.name +
-    ". He is " + this.pet.color + " and his name is " + this.pet.name;
+    ". He is " + this.pet.color + " and he is a " + this.pet.species;
   };
 
 }).call(this);
