@@ -42,4 +42,6 @@
     ". He is " + this.pet.color + " and he is a " + this.pet.species;
   };
 
+  var me = new PetOwner("Martein", 27, "Computerer", "Mantis Shrimp", 2, "Popeye");
+
 }).call(this);
