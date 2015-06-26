@@ -18,23 +18,26 @@
     }
   };
 
-  var Pet = function (name, species, color) {
-    this.name = name;
-    this.species = species;
-    this.color = color;
-  };
-
-  var PetOwner = function(name, age, petSpecies, petColor, petName) {
+  var User = function (name, age, job) {
     this.name = name;
     this.age = age;
-    Pet = function(species, color, name) {
+    this.job = job;
+  };
+
+  var Pet = function(species, color, name) {
       this.species = species;
       this.color = color;
       this.name = name;
-    };
-    this.pet = new Pet(petSpecies, petColor, petName);
   };
-  PetOwner.tellAboutPet = function () {
+
+  var PetOwner = function(name, age, job, petSpecies, petColor, petName) {
+    User.call(this, name, age, job);
+    this.pet = Pet.call(this, petSpecies, petColor, petName);
+  };
+  PetOwner = new User();
+  PetOwner.prototype.constructor = PetOwner;
+
+  PetOwner.prototype.tellAboutPet = function () {
     return "My pet's name is " + this.pet.name +
     ". He is " + this.pet.color + " and his name is " + this.pet.name;
   };
