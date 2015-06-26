@@ -1,18 +1,21 @@
 (function() {
 
-var add = function (a, b) {
-  return a + b;
-};
+  var Maths = {
+    add: function (a, b) {
+      return a + b;
+    },
 
-var sub = function (a, b) {
-  return a - b;
-};
+    sub: function (a, b) {
+      return a - b;
+    },
 
-var mul = function (a, b) {
-  return a * b;
-};
+    mul: function (a, b) {
+      return a * b;
+    },
 
-var div = function (a, b) {
-  return a / b;
-};
+    div: function (a, b) {
+      return a / b;
+    }
+  };
+
 }).call(this);
