@@ -34,7 +34,7 @@
     User.call(this, name, age, job);
     this.pet = Pet.call(this, petSpecies, petColor, petName);
   };
-  PetOwner = new User();
+  PetOwner.prototype = new User();
   PetOwner.prototype.constructor = PetOwner;
 
   PetOwner.prototype.tellAboutPet = function () {
