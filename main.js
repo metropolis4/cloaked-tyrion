@@ -24,4 +24,10 @@
     this.color = color;
   };
 
+  var User = function (name, age, job) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+  };
+
 }).call(this);
